@@ -11,7 +11,7 @@ app.use(cors());
 const mongoURI = 'mongodb+srv://joy:joy@cluster0.0lyty.mongodb.net/cakes';
 
 // Connect to MongoDB
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Error connecting to MongoDB:", err));
 
