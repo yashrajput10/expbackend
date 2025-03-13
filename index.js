@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection URL (Replace with your actual MongoDB URL)
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://joy:joy@cluster0.0lyty.mongodb.net/cakes';
+const mongoURI = 'mongodb+srv://joy:joy@cluster0.0lyty.mongodb.net/cakes';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
